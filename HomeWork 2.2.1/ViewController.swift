@@ -39,7 +39,6 @@ class ViewController: UIViewController {
         setResultViewBackground()
     }
     
-    
     @IBAction func changeRedSetting() {
         redColor = round(Double(redSlider.value * 100)) / 100.00
         redSetting.text = String(format: "%.2f", redColor)
