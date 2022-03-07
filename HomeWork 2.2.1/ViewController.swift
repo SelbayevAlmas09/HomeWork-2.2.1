@@ -19,52 +19,37 @@ class ViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
-    private var redColor: Double = 0.00
-    private var greenColor: Double = 0.00
-    private var blueColor: Double = 0.00
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        redSlider.setValue(Float(redSetting.text ?? "0.0") ?? 0.0, animated: false)
-        greenSlider.setValue(Float(greenSetting.text ?? "0.0") ?? 0.0, animated: false)
-        blueSlider.setValue(Float(blueSetting.text ?? "0.0") ?? 0.0, animated: false)
-        
-        redColor = round(Double(redSlider.value * 100)) / 100.00
-        greenColor = round(Double(greenSlider.value * 100)) / 100.00
-        blueColor = round(Double(blueSlider.value * 100)) / 100.00
-        
+
         resultedColorView.layer.cornerRadius = 10
         
         setResultViewBackground()
     }
     
     @IBAction func changeRedSetting() {
-        redColor = round(Double(redSlider.value * 100)) / 100.00
-        redSetting.text = String(format: "%.2f", redColor)
+        redSetting.text = String(format: "%.2f", redSlider.value)
         
         setResultViewBackground()
     }
     
     @IBAction func changeGreenSetting() {
-        greenColor = round(Double(greenSlider.value * 100)) / 100.00
-        greenSetting.text = String(format: "%.2f", greenColor)
+        greenSetting.text = String(format: "%.2f", greenSlider.value)
         
         setResultViewBackground()
     }
     
     @IBAction func changeBlueSetting() {
-        blueColor = round(Double(blueSlider.value * 100)) / 100.00
-        blueSetting.text = String(format: "%.2f", blueColor)
+        blueSetting.text = String(format: "%.2f", blueSlider.value)
         
         setResultViewBackground()
     }
     
     private func setResultViewBackground() {
         resultedColorView.backgroundColor = UIColor(
-            red: redColor * 255 / 255.00,
-            green: greenColor * 255 / 255.00,
-            blue: blueColor *  255 / 255.00,
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
             alpha: 1.0)
     }
     
