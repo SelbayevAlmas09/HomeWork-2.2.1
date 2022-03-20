@@ -179,7 +179,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="EvZ-6C-z50"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="FFG-SB-Vml">
                         <barButtonItem key="rightBarButtonItem" title="Change RGB" image="square.and.pencil" catalog="system" id="rw1-e1-3b4">
