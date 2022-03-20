@@ -9,11 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var resultedColorView: UIView!
+    @IBOutlet var colorView: UIView!
     
-    @IBOutlet var redSetting: UILabel!
-    @IBOutlet var greenSetting: UILabel!
-    @IBOutlet var blueSetting: UILabel!
+    @IBOutlet var redLabel: UILabel!
+    @IBOutlet var greenLabel: UILabel!
+    @IBOutlet var blueLabel: UILabel!
     
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
@@ -22,31 +22,31 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        resultedColorView.layer.cornerRadius = 10
+        colorView.layer.cornerRadius = 10
         
-        setResultViewBackground()
+        setColor()
     }
     
-    @IBAction func changeRedSetting() {
-        redSetting.text = String(format: "%.2f", redSlider.value)
+    
+    @IBAction func rgbSlider(_ sender: UISlider) {
+        setColor()
         
-        setResultViewBackground()
+        switch sender {
+        case redSlider:
+            redLabel.text = string(redSlider.value)
+        case greenSlider:
+            greenLabel.text = string(greenSlider.value)
+        default:
+            blueLabel.text = string(blueSlider.value)
+        }
     }
     
-    @IBAction func changeGreenSetting() {
-        greenSetting.text = String(format: "%.2f", greenSlider.value)
-        
-        setResultViewBackground()
+    private func string(_ value: Float) -> String {
+        String(format: "%.2f", value)
     }
     
-    @IBAction func changeBlueSetting() {
-        blueSetting.text = String(format: "%.2f", blueSlider.value)
-        
-        setResultViewBackground()
-    }
-    
-    private func setResultViewBackground() {
-        resultedColorView.backgroundColor = UIColor(
+    private func setColor() {
+        colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
