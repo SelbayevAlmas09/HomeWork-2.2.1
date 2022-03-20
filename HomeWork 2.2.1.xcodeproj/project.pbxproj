@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F241AB927E77AC500A6F576 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F241AB827E77AC500A6F576 /* ColorViewController.swift */; };
+		3F241AC127E77E6F00A6F576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F241ABF27E77E6F00A6F576 /* Main.storyboard */; };
 		3FB50DCF27D517C600EE07ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB50DCE27D517C600EE07ED /* AppDelegate.swift */; };
 		3FB50DD127D517C600EE07ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB50DD027D517C600EE07ED /* SceneDelegate.swift */; };
-		3FB50DD327D517C600EE07ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB50DD227D517C600EE07ED /* ViewController.swift */; };
-		3FB50DD627D517C600EE07ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB50DD427D517C600EE07ED /* Main.storyboard */; };
+		3FB50DD327D517C600EE07ED /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB50DD227D517C600EE07ED /* SettingsViewController.swift */; };
 		3FB50DD827D517C800EE07ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB50DD727D517C800EE07ED /* Assets.xcassets */; };
 		3FB50DDB27D517C800EE07ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB50DD927D517C800EE07ED /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F241AB827E77AC500A6F576 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		3F241AC027E77E6F00A6F576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FB50DCB27D517C600EE07ED /* HomeWork 2.2.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HomeWork 2.2.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB50DCE27D517C600EE07ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FB50DD027D517C600EE07ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3FB50DD227D517C600EE07ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3FB50DD527D517C600EE07ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FB50DD227D517C600EE07ED /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3FB50DD727D517C800EE07ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB50DDA27D517C800EE07ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB50DDC27D517C800EE07ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +39,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F241ABA27E77B5E00A6F576 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3FB50DCE27D517C600EE07ED /* AppDelegate.swift */,
+				3FB50DD027D517C600EE07ED /* SceneDelegate.swift */,
+				3FB50DDC27D517C800EE07ED /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3F241ABB27E77B8200A6F576 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3FB50DD727D517C800EE07ED /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3F241ABD27E77BBC00A6F576 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FB50DD227D517C600EE07ED /* SettingsViewController.swift */,
+				3F241AB827E77AC500A6F576 /* ColorViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3F241ABE27E77BCC00A6F576 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3FB50DC227D517C600EE07ED = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +92,12 @@
 		3FB50DCD27D517C600EE07ED /* HomeWork 2.2.1 */ = {
 			isa = PBXGroup;
 			children = (
-				3FB50DCE27D517C600EE07ED /* AppDelegate.swift */,
-				3FB50DD027D517C600EE07ED /* SceneDelegate.swift */,
-				3FB50DD227D517C600EE07ED /* ViewController.swift */,
-				3FB50DD427D517C600EE07ED /* Main.storyboard */,
-				3FB50DD727D517C800EE07ED /* Assets.xcassets */,
+				3F241ABF27E77E6F00A6F576 /* Main.storyboard */,
 				3FB50DD927D517C800EE07ED /* LaunchScreen.storyboard */,
-				3FB50DDC27D517C800EE07ED /* Info.plist */,
+				3F241ABD27E77BBC00A6F576 /* ViewControllers */,
+				3F241ABE27E77BCC00A6F576 /* Models */,
+				3F241ABA27E77B5E00A6F576 /* App */,
+				3F241ABB27E77B8200A6F576 /* Resources */,
 			);
 			path = "HomeWork 2.2.1";
 			sourceTree = "<group>";
@@ -125,9 +160,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F241AC127E77E6F00A6F576 /* Main.storyboard in Resources */,
 				3FB50DDB27D517C800EE07ED /* LaunchScreen.storyboard in Resources */,
 				3FB50DD827D517C800EE07ED /* Assets.xcassets in Resources */,
-				3FB50DD627D517C600EE07ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FB50DD327D517C600EE07ED /* ViewController.swift in Sources */,
+				3FB50DD327D517C600EE07ED /* SettingsViewController.swift in Sources */,
 				3FB50DCF27D517C600EE07ED /* AppDelegate.swift in Sources */,
+				3F241AB927E77AC500A6F576 /* ColorViewController.swift in Sources */,
 				3FB50DD127D517C600EE07ED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,10 +183,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3FB50DD427D517C600EE07ED /* Main.storyboard */ = {
+		3F241ABF27E77E6F00A6F576 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3FB50DD527D517C600EE07ED /* Base */,
+				3F241AC027E77E6F00A6F576 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -291,7 +327,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7KD7ZDKV3W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HomeWork 2.2.1/Info.plist";
+				INFOPLIST_FILE = "HomeWork 2.2.1/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7KD7ZDKV3W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HomeWork 2.2.1/Info.plist";
+				INFOPLIST_FILE = "HomeWork 2.2.1/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
     @IBOutlet var colorView: UIView!
     
@@ -18,6 +18,10 @@ class ViewController: UIViewController {
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
+    
+    @IBOutlet var redTextField: UITextField!
+    @IBOutlet var greenTextField: UITextField!
+    @IBOutlet var blueTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +43,10 @@ class ViewController: UIViewController {
         default:
             blueLabel.text = string(blueSlider.value)
         }
+    }
+    
+    
+    @IBAction func doneButtonPressed(_ sender: Any) {
     }
     
     private func string(_ value: Float) -> String {
